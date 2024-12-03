@@ -21,9 +21,12 @@
  *    getIntervalArray(3, 3) => [ 3 ]
  */
 function getIntervalArray(start, end) {
-  return new Array(end - start + 1)
-    .fill(start)
-    .map((item, index) => item + index);
+  return Array.from(
+    {
+      length: end - start + 1,
+    },
+    (_, i) => start + i
+  );
 }
 
 /**
