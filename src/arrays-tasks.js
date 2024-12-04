@@ -434,7 +434,6 @@ function getIndicesOfOddNumbers(numbers) {
  *    getHexRGBValues([]) => []
  */
 function getHexRGBValues(arr) {
-  if (arr.length === 0) return [];
   return arr.map((item) =>
     item.toString(16).toUpperCase().padStart(7, '#000000')
   );
